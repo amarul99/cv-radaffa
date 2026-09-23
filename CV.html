@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Radaffa Amarul Sukma</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #eeeeee;
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #352b28;
+            line-height: 1.5;
+        }
+
+        .cv {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 25px auto;
+            padding: 14mm 14mm 12mm;
+            background: white;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+        }
+
+        /* ================= HEADER ================= */
+
+        .header {
+            display: grid;
+            grid-template-columns: 205px 1fr;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .photo {
+            width: 190px;
+            height: 300px;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .name {
+            font-size: 36px;
+            line-height: 1.05;
+            letter-spacing: 1px;
+            color: #111;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .contact {
+            font-size: 12px;
+            color: #55504d;
+            margin-bottom: 18px;
+        }
+
+        /* ================= SECTION ================= */
+
+        .section {
+            margin-top: 17px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: #111;
+            font-size: 22px;
+            font-weight: 700;
+            border-bottom: 2px solid #111;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* ================= PROFIL ================= */
+
+        .profile {
+            font-size: 14.5px;
+            line-height: 1.55;
+            text-align: justify;
+        }
+
+        /* ================= ORGANISASI ================= */
+
+        .experience {
+            margin-bottom: 9px;
+        }
+
+        .experience h3 {
+            font-size: 14.5px;
+            font-weight: 800;
+            margin-bottom: 1px;
+            color: #3b302c;
+        }
+
+        .experience ul {
+            padding-left: 17px;
+            font-size: 13.5px;
+            line-height: 1.5;
+        }
+
+        .experience li {
+            margin-bottom: 1px;
+        }
+
+        /* ================= MAGANG ================= */
+
+        .job {
+            margin-bottom: 11px;
+        }
+
+        .job h3 {
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 1px;
+        }
+
+        .date {
+            font-size: 13.5px;
+            margin-bottom: 3px;
+        }
+
+        .job p {
+            font-size: 13.5px;
+            line-height: 1.5;
+        }
+
+        /* ================= SKILL ================= */
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            padding-top: 6px;
+        }
+
+        .skill-column {
+            font-size: 12.5px;
+            font-weight: 600;
+            line-height: 1.75;
+        }
+
+        .skill-column span {
+            display: block;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .cv {
+                margin: 0;
+                box-shadow: none;
+                width: 210mm;
+                min-height: 297mm;
+            }
+        }
+
+        @media (max-width: 800px) {
+
+            .cv {
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+                padding: 25px;
+            }
+
+            .header {
+                grid-template-columns: 120px 1fr;
+                gap: 15px;
+            }
+
+            .photo {
+                width: 120px;
+                height: 190px;
+            }
+
+            .name {
+                font-size: 26px;
+            }
+
+            .skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="cv">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <img
+                src="foto-radaffa.jpg"
+                alt="Foto Radaffa Amarul Sukma"
+                class="photo"
+            >
+
+            <div>
+
+                <h1 class="name">
+                    RADAFFA AMARUL SUKMA
+                </h1>
+
+                <div class="contact">
+                    daffasukma70@gmail.com
+                    &nbsp; | &nbsp;
+                    +62 895-6170-20307
+                    &nbsp; | &nbsp;
+                    DKI Jakarta - Jakarta Pusat
+                </div>
+
+
+                <!-- PROFIL -->
+
+                <section>
+
+                    <h2 class="section-title">
+                        Profil
+                    </h2>
+
+                    <p class="profile">
+                        Mahasiswa Sistem Informasi Telkom University Jakarta
+                        yang aktif dalam organisasi dan berbagai kegiatan.
+                        Memiliki kemampuan komunikasi yang baik, percaya diri,
+                        ramah, serta mampu beradaptasi dan bekerja sama dalam
+                        tim. Memiliki ketertarikan besar pada industri dan event
+                        musik, khususnya dalam peran usher, serta antusias untuk
+                        berkontribusi dalam menciptakan pengalaman yang nyaman
+                        dan positif bagi para pengunjung.
+                    </p>
+
+                </section>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PENGALAMAN ORGANISASI ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Pengalaman Organisasi & Prestasi
+            </h2>
+
+
+            <!-- OSIS -->
+
+            <div class="experience">
+
+                <h3>
+                    Ketua OSIS SMKN 14 Jakarta (2023 - 2024)
+                </h3>
+
+                <ul>
+                    <li>
+                        Memimpin dan mengelola lebih dari 10 program kerja OSIS
+                        selama masa kepengurusan
+                    </li>
+
+                    <li>
+                        Mengkoordinasikan dan membangun kerja sama yang solid
+                        dengan 36 anggota OSIS
+                    </li>
+
+                    <li>
+                        Menginisiasi dan menyelenggarakan konser sekolah pertama,
+                        sebagai bagian dari program kerja OSIS
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- FORUM OSIS -->
+
+            <div class="experience">
+
+                <h3>
+                    Anggota Divisi Kreatif Forum OSIS DKI Jakarta
+                    (2023 - 2024)
+                </h3>
+
+                <ul>
+                    <li>
+                        Membuat konten dan desain untuk kampanye edukasi di
+                        social media untuk para pelajar seluruh Indonesia,
+                        khususnya DKI Jakarta
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- TEATER -->
+
+            <div class="experience">
+
+                <h3>
+                    Juara Harapan Festival Teater Pelajar (2024)
+                </h3>
+
+                <ul>
+                    <li>
+                        Berperan sebagai aktor dalam pementasan teater
+                        berjudul ADOLECENTS
+                    </li>
+
+                    <li>
+                        Berkontribusi dalam persiapan latihan dan pertunjukan
+                        hingga meraih Juara Harapan
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- MARKETING CREW -->
+
+            <div class="experience">
+
+                <h3>
+                    Anggota Marketing Crew Telkom University Jakarta
+                </h3>
+
+                <strong>
+                    Januari 2026 - Sekarang
+                </strong>
+
+                <ul>
+                    <li>
+                        Bertugas dalam Divisi Story Telyu pada FGD Digital Team
+                    </li>
+
+                    <li>
+                        Membantu pembuatan dan pengelolaan konten digital untuk
+                        mendukung promosi dan publikasi kegiatan
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PENGALAMAN MAGANG ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Pengalaman Magang
+            </h2>
+
+
+            <!-- BPOM -->
+
+            <div class="job">
+
+                <h3>
+                    BADAN PENGAWAS OBAT DAN MAKANAN (BPOM)
+                </h3>
+
+                <div class="date">
+                    Januari - Maret 2025
+                </div>
+
+                <p>
+                    Bekerja di bagian tata usaha, bertugas membuat desain
+                    poster, reels, dan konten untuk Instagram resmi BPOM.
+                </p>
+
+            </div>
+
+
+            <!-- KOMISI YUDISIAL -->
+
+            <div class="job">
+
+                <h3>
+                    KOMISI YUDISIAL (KY)
+                </h3>
+
+                <div class="date">
+                    April - Juni 2025
+                </div>
+
+                <p>
+                    Bekerja di Biro Pusat Analisis dan Layanan Informasi.
+                    Membantu membuat konten dan dokumentasi acara, serta
+                    mendukung kegiatan administratif.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SOFT SKILL ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Soft Skill
+            </h2>
+
+            <div class="skills">
+
+                <div class="skill-column">
+                    <span>Talkactive</span>
+                    <span>Communication</span>
+                </div>
+
+                <div class="skill-column">
+                    <span>Teamwork</span>
+                    <span>Time Management</span>
+                </div>
+
+                <div class="skill-column">
+                    <span>Adaptability</span>
+                    <span>Responsibility & Discipline</span>
+                </div>
+
+                <div class="skill-column">
+                    <span>Event Handling</span>
+                    <span>Coordination with Team & Committee</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
